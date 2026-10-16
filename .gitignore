@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.claude/
+.venv/
+# not part of the submission
+loom_script.md
+# raw input data (provided with the assessment; place in data/ to run)
+data/
+/train-test.csv
+/validation.csv
+/validation-predictions-template.csv
+/december-chart-inputs.csv

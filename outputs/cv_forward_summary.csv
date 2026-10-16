@@ -1,0 +1,6 @@
+model,raw_MAE,raw_RMSE,raw_MAPE,raw_MdAPE,clean_MAE,clean_RMSE,clean_MAPE,clean_MdAPE
+Naive $/mile table,158.644,622.673,7.018,4.33,108.286,147.145,4.723,4.266
+"LightGBM, raw columns",129.537,613.856,5.603,2.965,78.888,111.678,3.302,2.93
+LightGBM + quote_signal (trap),134.374,618.652,5.885,2.746,83.882,131.862,3.577,2.699
+"Additive model, no GBM",95.087,603.311,4.202,1.529,43.967,65.674,1.824,1.501
+Additive model + GBM (FINAL),92.132,602.774,4.088,1.437,40.966,60.815,1.708,1.413

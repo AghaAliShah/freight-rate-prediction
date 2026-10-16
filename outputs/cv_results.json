@@ -1,0 +1,74 @@
+{
+  "forward": {
+    "Naive $/mile table": {
+      "raw_MAE": 158.644,
+      "raw_RMSE": 622.673,
+      "raw_MAPE": 7.018,
+      "raw_MdAPE": 4.33,
+      "clean_MAE": 108.286,
+      "clean_RMSE": 147.145,
+      "clean_MAPE": 4.723,
+      "clean_MdAPE": 4.266
+    },
+    "LightGBM, raw columns": {
+      "raw_MAE": 129.537,
+      "raw_RMSE": 613.856,
+      "raw_MAPE": 5.603,
+      "raw_MdAPE": 2.965,
+      "clean_MAE": 78.888,
+      "clean_RMSE": 111.678,
+      "clean_MAPE": 3.302,
+      "clean_MdAPE": 2.93
+    },
+    "LightGBM + quote_signal (trap)": {
+      "raw_MAE": 134.374,
+      "raw_RMSE": 618.652,
+      "raw_MAPE": 5.885,
+      "raw_MdAPE": 2.746,
+      "clean_MAE": 83.882,
+      "clean_RMSE": 131.862,
+      "clean_MAPE": 3.577,
+      "clean_MdAPE": 2.699
+    },
+    "Additive model, no GBM": {
+      "raw_MAE": 95.087,
+      "raw_RMSE": 603.311,
+      "raw_MAPE": 4.202,
+      "raw_MdAPE": 1.529,
+      "clean_MAE": 43.967,
+      "clean_RMSE": 65.674,
+      "clean_MAPE": 1.824,
+      "clean_MdAPE": 1.501
+    },
+    "Additive model + GBM (FINAL)": {
+      "raw_MAE": 92.132,
+      "raw_RMSE": 602.774,
+      "raw_MAPE": 4.088,
+      "raw_MdAPE": 1.437,
+      "clean_MAE": 40.966,
+      "clean_RMSE": 60.815,
+      "clean_MAPE": 1.708,
+      "clean_MdAPE": 1.413
+    }
+  },
+  "unseen_city": {
+    "Additive model, no GBM": {
+      "clean_MAE": 43.683,
+      "clean_RMSE": 64.04,
+      "clean_MAPE": 1.676,
+      "clean_MdAPE": 1.398
+    },
+    "Additive model + GBM (FINAL)": {
+      "clean_MAE": 40.522,
+      "clean_RMSE": 59.694,
+      "clean_MAPE": 1.549,
+      "clean_MdAPE": 1.292
+    },
+    "LightGBM, raw columns": {
+      "clean_MAE": 65.652,
+      "clean_RMSE": 94.611,
+      "clean_MAPE": 2.638,
+      "clean_MdAPE": 2.166
+    }
+  }
+}

@@ -1,0 +1,22 @@
+corrupted labels flagged: 677 (1.41%)
+done Naive $/mile table
+done LightGBM, raw columns
+done LightGBM + quote_signal (trap)
+done Additive model, no GBM
+done Additive model + GBM (FINAL)
+
+=== Rolling-origin summary (mean of 4 folds) ===
+                                raw_MAE  raw_RMSE  raw_MAPE  raw_MdAPE  clean_MAE  clean_RMSE  clean_MAPE  clean_MdAPE
+model                                                                                                                 
+Naive $/mile table               158.64    622.67      7.02       4.33     108.29      147.15        4.72         4.27
+LightGBM, raw columns            129.54    613.86      5.60       2.97      78.89      111.68        3.30         2.93
+LightGBM + quote_signal (trap)   134.37    618.65      5.88       2.75      83.88      131.86        3.58         2.70
+Additive model, no GBM            95.09    603.31      4.20       1.53      43.97       65.67        1.82         1.50
+Additive model + GBM (FINAL)      92.13    602.77      4.09       1.44      40.97       60.81        1.71         1.41
+
+=== Unseen-city holdout (5 draws of 8 cities, clean labels) ===
+                              clean_MAE  clean_RMSE  clean_MAPE  clean_MdAPE
+model                                                                       
+Additive model, no GBM            43.68       64.04        1.68         1.40
+Additive model + GBM (FINAL)      40.52       59.69        1.55         1.29
+LightGBM, raw columns             65.65       94.61        2.64         2.17

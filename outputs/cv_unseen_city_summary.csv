@@ -1,0 +1,4 @@
+model,clean_MAE,clean_RMSE,clean_MAPE,clean_MdAPE
+"Additive model, no GBM",43.683,64.04,1.676,1.398
+Additive model + GBM (FINAL),40.522,59.694,1.549,1.292
+"LightGBM, raw columns",65.652,94.611,2.638,2.166
